@@ -1,8 +1,8 @@
 # ✅ Tareas · frontend en React
 
-Aplicación web para gestionar proyectos y tareas, hecha con **React, TypeScript y Vite**. Es el frontend de la [API de Tareas](https://github.com/munguiagomezj/Proyecto2) (Proyecto 2, FastAPI).
+Aplicación web para gestionar proyectos y tareas, hecha con **React, TypeScript y Vite**. Es el frontend de la [API de Tareas](https://github.com/munguiagomezj/api-tareas-fastapi), hecha con FastAPI.
 
-**🔗 Demo en vivo:** https://munguiagomezj.github.io/Proyecto4/ · pulsa *«Usar la cuenta de prueba»*.
+**🔗 Demo en vivo:** https://munguiagomezj.github.io/tareas-react/ · pulsa *«Usar la cuenta de prueba»*.
 
 ![Captura de la aplicación](docs/app-claro.png)
 
@@ -38,7 +38,7 @@ GitHub Pages solo sirve archivos estáticos y no puede ejecutar el backend en Py
 | **Demo** | Sin `VITE_API_URL` (así se publica en Pages) | `src/api/mock.ts` simula la API en el navegador: validación, permisos, filtros, orden, paginación y estadísticas, con los datos en `localStorage` |
 | **API real** | `VITE_API_URL=http://localhost:8000` | `src/api/http.ts` llama a la API de FastAPI con `fetch` |
 
-El resto de la app no sabe qué cliente está usando. Los **tests end-to-end** comprueban el modo real: en CI se descarga y arranca la API del Proyecto 2 y Playwright prueba la app completa contra ella.
+El resto de la app no sabe qué cliente está usando. Los **tests end-to-end** comprueban el modo real: en CI se descarga y arranca la API real y Playwright prueba la app completa contra ella.
 
 ## 🧱 Arquitectura
 
@@ -71,10 +71,10 @@ Decisiones técnicas:
 ```bash
 npm install
 npm run dev                                   # modo demo
-VITE_API_URL=http://localhost:8000 npm run dev  # contra la API del Proyecto 2
+VITE_API_URL=http://localhost:8000 npm run dev  # contra la API real
 ```
 
-Para usar la API real, arráncala desde el [Proyecto 2](https://github.com/munguiagomezj/Proyecto2) permitiendo el origen del frontend: `CORS_ORIGINS='["http://localhost:5173"]'`.
+Para usar la API real, arráncala desde su [repositorio](https://github.com/munguiagomezj/api-tareas-fastapi) permitiendo el origen del frontend: `CORS_ORIGINS='["http://localhost:5173"]'`.
 
 ## ✅ Tests y calidad
 

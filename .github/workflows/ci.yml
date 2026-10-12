@@ -24,10 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Descargar la API (Proyecto 2)
+      - name: Descargar la API (api-tareas-fastapi)
         uses: actions/checkout@v4
         with:
-          repository: munguiagomezj/Proyecto2
+          repository: munguiagomezj/api-tareas-fastapi
           path: api
       - uses: actions/setup-python@v5
         with:

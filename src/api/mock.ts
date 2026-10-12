@@ -1,6 +1,6 @@
 /**
  * API simulada en el navegador para el modo demo (GitHub Pages no puede ejecutar el backend).
- * Reproduce el comportamiento de la API real del Proyecto 2: validación, permisos, filtros,
+ * Reproduce el comportamiento de la API real (api-tareas-fastapi): validación, permisos, filtros,
  * orden, paginación y estadísticas. Los datos se guardan en localStorage.
  */
 import { ApiError } from './types'
@@ -85,10 +85,10 @@ export function seedDb(now = new Date()): MockDb {
     [2, 'Imprimir tarjetas con QR al portfolio', 'todo', 'medium', 5, ['feria'], 6, null],
     [2, 'Lista de empresas que visitar', 'todo', 'medium', -1, ['feria', 'investigar'], 5, 'Mirar el plano de la feria'],
     [2, 'Ensayar preguntas técnicas', 'todo', 'high', 4, ['entrevista'], 3, 'Usar las guías de cada proyecto'],
-    [3, 'Proyecto 1: finanzas personales', 'done', 'medium', null, ['javascript'], 11, null],
-    [3, 'Proyecto 2: API de tareas', 'done', 'high', null, ['python', 'api'], 10, null],
-    [3, 'Proyecto 3: panel de datos', 'done', 'medium', null, ['python', 'datos'], 6, null],
-    [3, 'Proyecto 4: frontend en React', 'in_progress', 'high', 3, ['react'], 2, 'Este mismo proyecto'],
+    [3, 'Subir finanzas-personales', 'done', 'medium', null, ['javascript'], 11, null],
+    [3, 'Subir api-tareas-fastapi', 'done', 'high', null, ['python', 'api'], 10, null],
+    [3, 'Subir empleo-vivienda-espana', 'done', 'medium', null, ['python', 'datos'], 6, null],
+    [3, 'Terminar tareas-react', 'in_progress', 'high', 3, ['react'], 2, 'Este mismo proyecto'],
     [3, 'Fijar los repositorios en el perfil', 'todo', 'low', 7, ['github'], 1, null],
     [4, 'Renovar el abono transporte', 'todo', 'low', -2, [], 4, null],
     [4, 'Comprar ropa para la feria', 'todo', 'medium', 6, ['feria'], 2, null],

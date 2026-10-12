@@ -1,4 +1,4 @@
-// Tipos que reflejan los esquemas de la API de Tareas (Proyecto 2).
+// Tipos que reflejan los esquemas de la API de Tareas (repositorio api-tareas-fastapi).
 
 export type TaskStatus = 'todo' | 'in_progress' | 'done'
 export type Priority = 'low' | 'medium' | 'high'

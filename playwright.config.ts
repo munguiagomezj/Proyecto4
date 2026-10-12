@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
 
 /**
- * Tests end-to-end contra la API REAL del Proyecto 2.
+ * Tests end-to-end contra la API REAL (repositorio api-tareas-fastapi).
  * Requieren la API arrancada en API_URL (por defecto http://localhost:8000).
  * El frontend se compila apuntando a esa API y se sirve con `vite preview`.
  */
